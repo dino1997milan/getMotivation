@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/goApp">
+
+    <fragment
+        android:id="@+id/goApp"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.BottoniHomeFragment"
+        android:label="BottoniHomeFragment" />
+    <fragment
+        android:id="@+id/setMotivator"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.SetMotivatorFragment"
+        android:label="SetMotivatorFragment" />
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.LogoutFragment"
+        android:label="LogoutFragment" />
+    <fragment
+        android:id="@+id/cambiaPassword"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.CambiaPasswordFragment"
+        android:label="CambiaPasswordFragment" />
+    <fragment
+        android:id="@+id/notePersonali"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.ObiettivoAppFragment"
+        android:label="fragment_obiettivo_app"
+        tools:layout="@layout/fragment_obiettivo_app" />
+    <fragment
+        android:id="@+id/TestMotivator"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.FragmentProvaSuoni"
+        android:label="FragmentProvaSuoni" />
+    <fragment
+        android:id="@+id/sceltaTempo"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.SceltaPauseFragment"
+        android:label="SceltaPauseFragment" />
+    <fragment
+        android:id="@+id/sceltaLunghezze"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.MisureFragment"
+        android:label="fragment_misure"
+        tools:layout="@layout/fragment_misure" />
+    <fragment
+        android:id="@+id/sceltaObbiettivi"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.ObbiettiviUtenteFragment"
+        android:label="fragment_obbiettivi_utente"
+        tools:layout="@layout/fragment_obbiettivi_utente" />
+    <fragment
+        android:id="@+id/datiCorsePrecedenti"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.ListaRisultatiFragment"
+        android:label="ListaRisultatiFragment" />
+    <fragment
+        android:id="@+id/graficoUltimaCorsa"
+        android:name="com.getmotivation.getmotivation.OrlandoAntonioVeneziano.FragmentRisultatiCorsa"
+        android:label="FragmentRisultatiCorsa" />
+</navigation>

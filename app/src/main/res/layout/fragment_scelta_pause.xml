@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SceltaPauseFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/testoScelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="12dp"
+        android:paddingStart="15dp"
+        android:text="In questa schermata puoi settare i secondi di pausa tra un audio ed il successivo, nelle due differenti modalità d'uso dell'applicazione.(Inserendo 0 non ci sarà alcuna pausa tra i differenti file audio; non c'è un limite al numero di secondi impostabili)(I valori di default sono 20 secondi in modalità Run() e 0 secondi in modalità GetMotivation() )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/setRun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/testoScelta"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:textSize="12dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="SECONDI DI PAUSA AUDIO IN MODALITA' RUN():" />
+
+        <EditText
+            android:id="@+id/secondiRun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:hint="n. secondi"
+            android:textSize="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setMotivation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/setRun"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="70dp"
+            android:textSize="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="SECONDI DI PAUSA AUDIO IN MODALITA' GETMOTIVATION():" />
+
+        <EditText
+            android:id="@+id/secondiGetMotivation"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:hint="n. secondi"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+
+            />
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:weightSum="2">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foto_time">
+
+        </ImageView>
+       </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="2">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setModifiche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setMotivation"
+        android:text="Applica  modifiche"/>
+</LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

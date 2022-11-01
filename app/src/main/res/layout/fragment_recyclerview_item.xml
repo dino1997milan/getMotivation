@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginBottom="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOTIVATOR NAME"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:id="@+id/nameTextView"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/switchVH"
+            />
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal">-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            android:text="prova"
+            android:foregroundGravity="center_horizontal"
+            android:id="@+id/buttonProva"
+            />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/tastoStopVH"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:clickable="true"-->
+<!--        android:src="@drawable/icons8stop64"-->
+<!--        />-->
+
+</LinearLayout>
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+</androidx.cardview.widget.CardView>

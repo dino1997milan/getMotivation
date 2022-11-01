@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemprimaoperazione"
+        android:title="sound1" />
+    <item android:id="@+id/itemsecondaoperazione"
+        android:title="sound2" />
+    <item android:id="@+id/itemterzaoperazione"
+        android:title="sound3" />
+    <item android:id="@+id/itemquartaoperazione"
+        android:title="sound4" />
+    <item android:id="@+id/itemquintaoperazione"
+        android:title="sound5" />
+</menu>

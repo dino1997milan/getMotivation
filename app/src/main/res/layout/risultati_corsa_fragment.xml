@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRisultatiCorsa"
+    android:background="@drawable/abstract_colorful_rays_background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="19">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="RISULTATI CORSA: "
+        android:textSize="18dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        android:id="@+id/titoloRisultati"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/titoloRisultati"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:id="@+id/layoutRisultati">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/running64" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="passi: "
+                    android:id="@+id/testoRisultatoPassi"
+                    android:textColor="@color/black"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="35dp"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/distance96"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="km: "
+                    android:id="@+id/testoRisultatoDistanza"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/fire96"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="kcal: "
+                    android:id="@+id/testoRisultatoKcal"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="TORNA ALLA HOME"
+        android:textSize="10dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/tornaAllaHome"
+        app:layout_constraintTop_toBottomOf="@id/layoutRisultati"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="13"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tornaAllaHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="GRAFICO PASSI PERCORSI"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/titoloGrafico"/>
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/titoloGrafico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/BarChartPassi"
+        android:visibility="visible"
+        android:clickable="true">
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/BarChartPassi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/BarChartKm"
+        android:visibility="gone"
+        android:clickable="true">
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/BarChartKm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/BarChartKcal"
+        android:visibility="gone"
+        android:clickable="true">
+    </com.github.mikephil.charting.charts.BarChart>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_weight="2">-->
+<!--    <TextView-->
+<!--        android:id="@+id/obbiettivoRaggiuntoPassi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/BarChartPassi"-->
+<!--        app:layout_constraintVertical_weight="0.05"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/obbiettivoRaggiuntoKm"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="7dp"-->
+<!--        android:text="CONGRATULAZIONI,OGGI HAI RAGGIUNTO IL TUO OBBIETTIVO DI PASSI PERCORSI!"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/obbiettivoRaggiuntoKm"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintVertical_weight="0.05"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/obbiettivoRaggiuntoKcal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/obbiettivoRaggiuntoPassi"-->
+<!--        android:layout_marginBottom="7dp"-->
+<!--        android:text="CONGRATULAZIONI,OGGI HAI RAGGIUNTO IL TUO OBBIETTIVO DI KM PERCORSI!"/>-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/obbiettivoRaggiuntoKcal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintVertical_weight="0.05"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:layout_marginBottom="7dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/obbiettivoRaggiuntoKm"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:visibility="gone"-->
+<!--        android:text="CONGRATULAZIONI,OGGI HAI RAGGIUNTO IL TUO OBBIETTIVO DI KCAL BRUCIATE!"/>-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

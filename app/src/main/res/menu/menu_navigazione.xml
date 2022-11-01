@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/goApp"
+        android:icon="@drawable/menutendina_run_icon_app_goapp_icons8startskintype448"
+        android:title="@string/app" />
+    <item android:title="@string/dati_corse_precedenti">
+        <menu>
+    <item
+        android:id="@+id/datiCorsePrecedenti"
+        android:icon="@drawable/menutendina_dati_corse_precedenti_icons8lettura64"
+        android:title="@string/registro_statistiche_utente" />
+    <item
+        android:id="@+id/graficoUltimaCorsa"
+        android:title="@string/grafici_ultime_corse"
+        android:icon="@drawable/menutendina_grafico_crescente_icons8statistiche64"
+        />
+        </menu>
+    </item>
+<item android:title="@string/opzioni_suono">
+    <menu>
+    <item
+        android:id="@+id/setMotivator"
+        android:title="@string/scelta_motivatori"
+        android:icon="@drawable/menutendina_check_recyclerview_icons8listadicontrollo64"/>
+    <item
+        android:id="@+id/TestMotivator"
+        android:title="@string/prova_motivatori"
+        android:icon="@drawable/menutendina_provasuoni_icons8musicalnotes80"/>
+        <item
+            android:id="@+id/sceltaTempo"
+            android:title="@string/setta_il_tempo"
+            android:icon="@drawable/icons8tempo96" />
+    </menu>
+</item>
+    <item android:title="@string/impostazioni_corsa">
+        <menu>
+
+    <item
+        android:id="@+id/sceltaObbiettivi"
+        android:title="@string/obiettivi"
+        android:icon="@drawable/icons8_2goals60" />
+
+    <item
+        android:id="@+id/sceltaLunghezze"
+        android:title="@string/misure"
+        android:icon="@drawable/misure_icons880" />
+
+        </menu>
+    </item>
+
+<item android:title="@string/altro">
+    <menu>
+    <item
+        android:id="@+id/cambiaPassword"
+        android:icon="@drawable/menutendina_change_password_icons8sbloccare64"
+        android:title="@string/cambia_password"/>
+    <item
+        android:id="@+id/notePersonali"
+        android:title="@string/nota_produttore"
+        android:icon="@drawable/menutendina_nota_produttore_icons8nota64"
+        android:contentDescription="scopo dell'applicazione"/>
+    </menu>
+</item>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/menutendina_logout_icons8uscita64"
+        android:title="@string/logout" />
+</menu>

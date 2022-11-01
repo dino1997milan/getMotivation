@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ObiettivoAppFragment"
+    android:background="@drawable/immagine_obbiettivo2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titoloObbApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Obiettivo dell’applicazione: "
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/testoObiettivoApp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:contentDescription="obiettivoApp"
+        android:text="Si vuole migliorare il rendimento sportivo dell’utente motivandolo durante l’attività della corsa , con riproduzione di suoni di incoraggiamento psicologico; verranno registrate delle features riguardanti l’attività sportiva, che l’utente potrà in seguito visualizzare. L’app permette anche di accedere ad una seconda interfaccia, per stimolare e motivare l’utente durante la vita quotidiana, al di fuori dell’attività sportiva."
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/titoloObbApp"
+        android:textColor="@color/black"
+         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBackObiettivoApp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testoObiettivoApp"
+        app:layout_constraintVertical_bias="0.311" />
+</LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
