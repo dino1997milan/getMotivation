@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378728450709",
+    "project_id": "getmotivation-63309",
+    "storage_bucket": "getmotivation-63309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378728450709:android:f24e459f946e7be368299c",
+        "android_client_info": {
+          "package_name": "com.getmotivation.getmotivation.OrlandoAntonioVeneziano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378728450709-q5neeo71t2bpoi9iqdlsm7v0srcullj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCuHGJLM2YahMJvPuq6RCrMJajNAywoT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378728450709-q5neeo71t2bpoi9iqdlsm7v0srcullj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
