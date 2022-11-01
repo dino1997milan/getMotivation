@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.getmotivation.getmotivation.OrlandoAntonioVeneziano">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<!--<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />-->
+<!--    <uses-feature android:name="android.hardware.sensor.accelerometer"-->
+<!--        android:required="true" />-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_get_motivation"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_get_motivation"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GetMotivation"
+        tools:targetApi="31">
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- |^| prova -->
+        <!-- originale : per ottenere un identificativo personale bisogna accedere al portale  adMob-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+
+        <activity
+            android:name=".ActivityRisultatiCorsa"
+            android:exported="false" />
+        <activity
+            android:name=".TabellaBMIActivity"
+            android:exported="false" />
+
+<!--        <receiver-->
+<!--            android:name=".MyWakefulReceiver"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true" />-->
+
+        <activity
+            android:name=".ProvaSuoniActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".ServiceGetMotivation"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".GetMotivation"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Run"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordDimenticata"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegistrazione"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
