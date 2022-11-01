@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sounds1">
+        <item>@raw/sound1ibra</item>
+        <item>@raw/sound1mj</item>
+        <item>@raw/sound1conte</item>
+        <item>@raw/sound1mou</item>
+        <item>@raw/sound1totti</item>
+
+    </array>
+</resources>
